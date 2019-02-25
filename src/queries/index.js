@@ -27,3 +27,21 @@ query USER_QUERY($login:String!){
   }
 }
 `;
+
+export const USER_SEARCH_QUERY = gpl`
+query ($user: String!) {
+  search(query: $user, last: 10, type: USER) {
+    edges {
+      node {
+        ... on User {
+          id
+          avatarUrl
+          login
+          name
+          location
+        }
+      }
+    }
+  }
+}
+`;

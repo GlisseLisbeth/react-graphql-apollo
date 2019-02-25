@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Result from '../components/Result';
 import Users from '../components/Users';
 
 import '../index.css';
@@ -28,7 +29,7 @@ class Search extends Component {
                         placeholder="Search Github Users"
                     />
                 </div>
-                <Users />
+                { this.state.value === '' ? (<Users />): (<Result value= { this.state.value }/>) }
             </Fragment>
         )
     }
