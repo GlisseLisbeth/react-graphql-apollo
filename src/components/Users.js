@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Query } from 'react-apollo';
+import { Link } from 'react-router-dom';
 
 import { USERS_QUERY } from '../queries';
 
@@ -11,7 +12,7 @@ const Users = () => (
 
             return(
                 <Fragment>
-                    <a href="login">
+                    <Link to = {`/user/${data.viewer.login}`}>
                         <div className="has-user row d-flex align-items-start flex-row p-3">
                             <img
                             alt="user avatar"
@@ -23,7 +24,7 @@ const Users = () => (
                                 <span className="has-user-text-login">{ data.viewer.login }</span>
                             </div>
                         </div>
-                    </a>
+                    </Link>
                 </Fragment>
             )
         }}

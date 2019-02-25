@@ -55,3 +55,13 @@ a, a:hover {
   text-decoration: none;
   color: #000000;
 }
+
+.user-item-text {
+  font-size: 12.8pt;
+}
+.has-text-left {
+  color: #057dff !important;
+}
+.has-user-item {
+  font-size: 18pt;
+}
