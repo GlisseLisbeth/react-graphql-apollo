@@ -1,7 +1,12 @@
 import React from 'react';
 
+//import container
+import Search from './Search';
+
 const AppContainer = () => (
-  <div>Configuration Github Graphql Api Apollo Client</div>
+    <div className="app-container container-fluid">
+        <Search />
+    </div>
 );
 
 export default AppContainer;

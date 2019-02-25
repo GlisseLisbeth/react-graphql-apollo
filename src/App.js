@@ -6,7 +6,7 @@ import { HttpLink } from 'apollo-link-http';
 import { onError } from 'apollo-link-error';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 
-//Import components
+//Import container
 import AppContainer from './container/AppContainer';
 
 const GITHUB_BASE_URL = 'https://api.github.com/graphql';
